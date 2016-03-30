@@ -23,7 +23,9 @@ var log = hyperlog(memdb(), {
   valueEncoding: 'json'
 })
 
-var hy = hyphy(log, process, state => {
+var hy = hyphy(log)
+
+process(hy).onValue(state => {
   console.log('new app state!', JSON.stringify(state))
 })
 
