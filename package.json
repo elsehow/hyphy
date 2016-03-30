@@ -1,6 +1,6 @@
 {
   "name": "hyphy",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "use kefir streams to icrementally build an application state using messages that come over a hyperlog",
   "main": "index.js",
   "scripts": {
@@ -18,5 +18,16 @@
   "devDependencies": {
     "hyperlog": "^4.8.1",
     "memdb": "^1.3.1"
-  }
+  },
+  "directories": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/elsehow/hyphy.git"
+  },
+  "bugs": {
+    "url": "https://github.com/elsehow/hyphy/issues"
+  },
+  "homepage": "https://github.com/elsehow/hyphy#readme"
 }

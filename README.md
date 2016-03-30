@@ -3,7 +3,7 @@
 use [Kefir streams](https://rpominov.github.io/kefir/)
 to incrementally build an application state using messages that come over a [hyperlog](https://github.com/mafintosh/hyperlog][hyperlog)
 
-since we cannot know the order in which we will receive hyperlog nodes, CES/FRP gives us an advantage. we can use =bufferBy=, =bufferWhileBy=, and other tricks, followed by a final =scan= to produce a stream of application states, all of which are built incrementally from hyperlog messages
+since we cannot know the order in which we will receive hyperlog nodes, CES/FRP gives us an advantage. we can use `bufferBy`, `bufferWhileBy`, and other tricks, followed by a final `scan` to produce a stream of application states, all of which are built incrementally from hyperlog messages
 
 we can use the resulting stream objects to power react/virtual-dom-like views, and/or to save stuff into an app db. with some trickery, we can even use such a stream to purposefully remember/replicate only certain parts of the hyperlog, although doing that is outside of this module's scope.
 
@@ -62,7 +62,7 @@ log.append({
 
 `processF` takes a Kefir stream and returns a Kefir stream. you don't have to produce this stream. See the [Kefir docs](https://rpominov.github.io/kefir/) for details on interacting with Kefir streams.
 
-the stream that =processF= returns should be a stream of application states, whatever that means to you. 
+the stream that `processF` returns should be a stream of application states, whatever that means to you. 
 
 `newStateCb(state)` is called whenever a new item comes over the stream returned by `processF`
 
