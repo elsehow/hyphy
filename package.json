@@ -1,6 +1,6 @@
 {
   "name": "hyphy",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "use kefir streams to icrementally build an application state using messages that come over a hyperlog",
   "main": "index.js",
   "scripts": {
