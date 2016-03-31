@@ -1,6 +1,6 @@
 {
   "name": "hyphy",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "description": "produce a kefir stream of nodes that come over a hyperlog",
   "main": "index.js",
   "scripts": {
